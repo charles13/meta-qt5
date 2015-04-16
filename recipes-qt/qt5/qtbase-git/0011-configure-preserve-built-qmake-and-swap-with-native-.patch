@@ -1,7 +1,7 @@
-From 6b980c8132800001b2f0c5c0e76f7cc7c60d14ee Mon Sep 17 00:00:00 2001
+From 251696923c256d02ddb4e2d5ffb9ba1a77c68a20 Mon Sep 17 00:00:00 2001
 From: Denys Dmytriyenko <denys@ti.com>
 Date: Mon, 11 Nov 2013 20:22:34 -0500
-Subject: [PATCH 13/13] configure: preserve built qmake and swap with native
+Subject: [PATCH 11/11] configure: preserve built qmake and swap with native
  one
 
 Let configure script build the real qmake, but right after it's built, swap
@@ -13,12 +13,12 @@ Signed-off-by: Denys Dmytriyenko <denys@ti.com>
  1 file changed, 2 insertions(+)
 
 diff --git a/configure b/configure
-index c19ff6a..2d920e3 100755
+index f6a59e3..a28da91 100755
 --- a/configure
 +++ b/configure
-@@ -3879,6 +3879,8 @@ if true; then ###[ '!' -f "$outpath/bin/qmake" ];
- 
-     (cd "$outpath/qmake"; "$MAKE") || exit 2
+@@ -4076,6 +4076,8 @@ if true; then ###[ '!' -f "$outpath/bin/qmake" ];
+         echo "Done."
+     fi
  fi # Build qmake
 +mv "$outpath/bin/qmake" "$outpath/bin/qmake-real"
 +mv "$outpath/bin/qmake-native" "$outpath/bin/qmake"

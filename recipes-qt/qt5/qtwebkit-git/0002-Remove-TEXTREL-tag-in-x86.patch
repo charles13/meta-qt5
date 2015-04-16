@@ -1,4 +1,4 @@
-From 491cbd653eb7b992202f06bd2e62cf29f5f495af Mon Sep 17 00:00:00 2001
+From 519b1775717d3e595e2b645dbc624c864924fb1d Mon Sep 17 00:00:00 2001
 From: Magnus Granberg <zorry@gentoo.org>
 Date: Fri, 27 Feb 2015 11:55:09 +0100
 Subject: [PATCH 2/2] Remove TEXTREL tag in x86
