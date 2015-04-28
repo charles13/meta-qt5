@@ -142,7 +142,7 @@ EOF
 }
 
 # qtbase is exception, we need to use mkspecs from ${S}
-QMAKE_MKSPEC_PATH = "${B}"
+QMAKE_MKSPEC_PATH = "${S}"
 
 # another exception is that we need to run bin/qmake, because EffectivePaths are relative to qmake location
 OE_QMAKE_QMAKE_ORIG = "${STAGING_BINDIR_NATIVE}/${QT_DIR_NAME}/qmake"
