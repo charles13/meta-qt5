@@ -36,7 +36,7 @@ SRC_URI += " \
     file://OEQt5Toolchain.cmake \
 "
 
-SRCREV = "4f8171998378f3e0f345b2b417afbfc9ad9738f0"
+SRCREV = "35a125971cd09318f59918dba9255c8a0ad9a97c"
 
 LIC_FILES_CHKSUM = "file://LICENSE.LGPLv21;md5=d87ae0d200af76dca730d911474cbe5b \
                     file://LICENSE.LGPLv3;md5=ffcfac38a32c9ebdb8ff768fa1702478 \
